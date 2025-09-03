@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>Sky Snap</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 style="background-color: red; color: rgb(32, 24, 24);">This is my weather App, an API handling project.</h1>
+
+    <header>
+        <h1>Sky Snap</h1>
+    </header>
+
+
+    <main>
+        <div id="weather-container">
+        <h1 id="heading">What's up weather</h1>
+        <div id="input-container">
+            
+            <input type="text", id="city-input">
+            <button id="search-btn">search</button>
+        </div>
+    <div id="weather-details" class="hidden">
+        <h4 id="city-name"></h4>
+        <p id="temp"></p>
+        <p id="humidity"></p>
+        <p id="description"></p>
+
+    </div>
+<p id="error" class="hidden"></p>
+</div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
